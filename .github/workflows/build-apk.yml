@@ -15,7 +15,7 @@ jobs:
           channel: stable
       - name: Create Android shell and copy MAYA sources
         run: |
-          unzip -q maya_ai_stage2_cloudbuild.zip
+          unzip -q maya_ai_flutter_groq.zip
           flutter create --org com.maya --project-name maya_ai --platforms android shell
           rm -rf shell/lib
           cp -r maya_ai/app/lib shell/lib
